@@ -1,0 +1,12 @@
+C:\Project\LC\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Project\LC\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Project\LC\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojAssemblyReference.cache
+C:\Project\LC\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Project\LC\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Project\LC\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Project\LC\LC\bin\Debug\ConsoleApplication1.exe
+C:\Project\LC\LC\bin\Debug\ConsoleApplication1.pdb
+C:\Project\LC\LC\obj\Debug\ConsoleApplication1.csprojAssemblyReference.cache
+C:\Project\LC\LC\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Project\LC\LC\obj\Debug\ConsoleApplication1.exe
+C:\Project\LC\LC\obj\Debug\ConsoleApplication1.pdb
