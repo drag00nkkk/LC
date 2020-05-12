@@ -88,7 +88,8 @@ namespace ConsoleApplication1
 //            RotateMatrix_inteview_01_07.Test();
 //                RobotMovingCount_inteview_13.Test();
 //            AddTwoNumbers_2.Test();
-            WiggleSort_324.Test();
+//            WiggleSort_324.Test();
+            AddOneRow_623.Test();
 //            QuickSort.Test();
 //            QuickSelect.Test();
         }

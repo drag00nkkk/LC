@@ -38,6 +38,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="AddOneRow_623.cs" />
         <Compile Include="AddTwoNumbers_2.cs" />
         <Compile Include="CheckSuduko.cs" />
         <Compile Include="copyNodeList138.cs" />
