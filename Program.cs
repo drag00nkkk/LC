@@ -89,7 +89,8 @@ namespace ConsoleApplication1
 //                RobotMovingCount_inteview_13.Test();
 //            AddTwoNumbers_2.Test();
 //            WiggleSort_324.Test();
-            AddOneRow_623.Test();
+//            AddOneRow_623.Test();
+            IsBalanced_interview_4.Test();
 //            QuickSort.Test();
 //            QuickSelect.Test();
         }
