@@ -5,6 +5,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization.Formatters;
 using System.Xml;
+using ConsoleApplication1.Properties;
 
 namespace ConsoleApplication1
 {
@@ -90,7 +91,8 @@ namespace ConsoleApplication1
 //            AddTwoNumbers_2.Test();
 //            WiggleSort_324.Test();
 //            AddOneRow_623.Test();
-            IsBalanced_interview_4.Test();
+//            IsBalanced_interview_4.Test();
+            LowestCommonAncestor_interview_4_8.Test();
 //            QuickSort.Test();
 //            QuickSelect.Test();
         }
