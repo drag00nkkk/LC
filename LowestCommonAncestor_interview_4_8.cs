@@ -63,91 +63,6 @@ namespace ConsoleApplication1.Properties
             return left ?? right;
         }
 
-        private Dictionary<TreeNode, int> node2Depth = new Dictionary<TreeNode, int>();
-
-//        public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
-//        {
-//            var pStack = FindNode(root, p);
-//            var qStack = FindNode(root, q);
-//
-//            var biggerCount = Math.Abs(pStack.Count - qStack.Count);
-//            if (biggerCount > 0)
-//            {
-//                var biggerStack = pStack.Count > qStack.Count ? pStack : qStack;
-//                for (int i = 0; i < biggerCount; i++)
-//                {
-//                    biggerStack.Pop();
-//                }
-//            }
-//
-//            var count = pStack.Count;
-//            for (int i = 0; i < count; i++)
-//            {
-//                var node = pStack.Pop();
-//                if (node.val == qStack.Pop().val)
-//                {
-//                    return node;
-//                }
-//            }
-//
-//            return null;
-//        }
-
-        private Stack<TreeNode> FindNode(TreeNode root, TreeNode node)
-        {
-            var res = new Stack<TreeNode>();
-            var stack = new Stack<TreeNode>();
-            stack.Push(root);
-            RecordNode(root, 1);
-            while (stack.Count > 0)
-            {
-                var head = stack.Pop();
-                var depth = node2Depth[head];
-
-                while (res.Count > 0 && node2Depth[res.Peek()] >= depth)
-                {
-                    res.Pop();
-                }
-
-                res.Push(head);
-
-                if (head.val == node.val)
-                {
-                    break;
-                }
-
-                var bHit = false;
-                if (head.left != null)
-                {
-                    stack.Push(head.left);
-                    RecordNode(head.left, depth + 1);
-                    bHit = true;
-                }
-
-                if (head.right != null)
-                {
-                    stack.Push(head.right);
-                    RecordNode(head.right, depth + 1);
-                    bHit = true;
-                }
-
-                if (!bHit)
-                {
-                    res.Pop();
-                }
-            }
-
-            return res;
-        }
-
-        private void RecordNode(TreeNode inNode, int inDepth)
-        {
-            if (!node2Depth.ContainsKey(inNode))
-            {
-                node2Depth.Add(inNode, inDepth);
-            }
-        }
-
         private void DumpStack(Stack<TreeNode> stack)
         {
             var array = stack.ToArray();
@@ -166,11 +81,14 @@ namespace ConsoleApplication1.Properties
 //            var tree = MakeTree(new[] {3, 5, 1, 6, 2, 0, 8, -1, -1, 7, 4});
 //            var resNode = obj.LowestCommonAncestor(tree, new TreeNode(5), new TreeNode(1));
 //            var tree = MakeTree(new[] {0, 1, -1, 2, -1, -1, -1, 3});
+//            var tree = MakeTree(new[]
+//                {37, -34, -48, -1, -100, -101, 48, -1, -1, -1, -1, -54, -1, -71, -22, -1, -1, -1, 8});
+
             var tree = MakeTree(new[]
-                {37, -34, -48, -1, -100, -101, 48, -1, -1, -1, -1, -54, -1, -71, -22, -1, -1, -1, 8});
+                {1, 2, -1, 3, -1, 4, -1, 5, -1, 6, -1});
 
             DumpTree(tree);
-            var resNode = obj.LowestCommonAncestor(tree, new TreeNode(8), new TreeNode(-34));
+            var resNode = obj.LowestCommonAncestor(tree, new TreeNode(3), new TreeNode(6));
             Utils.Print($"vvval = {resNode?.val}");
         }
 
