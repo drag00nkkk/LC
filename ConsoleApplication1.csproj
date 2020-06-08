@@ -45,6 +45,7 @@
         <Compile Include="distributeCandies1103.cs" />
         <Compile Include="GameOfLife_289.cs" />
         <Compile Include="IsBalanced_interview_4.cs" />
+        <Compile Include="IsSubPath_1367.cs" />
         <Compile Include="longestPalindrome5.cs" />
         <Compile Include="LowestCommonAncestor_interview_4_8.cs" />
         <Compile Include="Machines.cs" />

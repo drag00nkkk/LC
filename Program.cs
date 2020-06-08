@@ -92,9 +92,10 @@ namespace ConsoleApplication1
 //            WiggleSort_324.Test();
 //            AddOneRow_623.Test();
 //            IsBalanced_interview_4.Test();
-            LowestCommonAncestor_interview_4_8.Test();
+//            LowestCommonAncestor_interview_4_8.Test();
 //            QuickSort.Test();
 //            QuickSelect.Test();
+            IsSubPath_1367.Test();
         }
 
         /*
