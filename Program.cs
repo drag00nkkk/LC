@@ -15,7 +15,7 @@ namespace LeetCode
         static void Main(string[] args)
         {
             // ReverseBits.Test();
-            Reverse32.Test();
+            IsPalindrome.Test();
         }
     }
 }
