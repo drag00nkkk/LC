@@ -15,7 +15,8 @@ namespace LeetCode
         static void Main(string[] args)
         {
             // ReverseBits.Test();
-            IsPalindrome.Test();
+            //IsPalindrome.Test();
+            MergeInterval.Test();
         }
     }
 }
