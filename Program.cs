@@ -16,7 +16,7 @@ namespace LeetCode
         {
             // ReverseBits.Test();
             //IsPalindrome.Test();
-            Atoi_8.Test();
+            AddTwoNumbersByNode.Test();
         }
     }
 }
