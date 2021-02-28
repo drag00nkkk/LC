@@ -26,6 +26,11 @@ namespace LeetCode
         {
             Console.WriteLine(str);
         }
+
+        public static void Print(int number)
+        {
+            Print($"{number}");
+        }
     }
 
     public class TreeNode
